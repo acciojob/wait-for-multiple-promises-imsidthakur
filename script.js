@@ -11,10 +11,12 @@ const promise1 = new Promise((res,rej)=> {
 	td1.textContent = "Promise 1";
 	td2.textContent = 2;
 	tr.textContent = "Loading...";
+	tr.setAttribute('id','loading');
 	tbody.append(tr);
 
 	setTimeout(()=> {
 	tr.textContent = "";
+	tr.removeAttribute('id');
 	tr.append(td1);
 	tr.append(td2);
 	res(tr);
@@ -28,10 +30,12 @@ const promise2 = new Promise((res,rej)=> {
 	td1.textContent = "Promise 2";
 	td2.textContent = 1;
 	tr.textContent = "Loading...";
+	tr.setAttribute('id','loading');
 	tbody.append(tr);
 
 	setTimeout(()=> {
 	tr.textContent = "";
+	tr.removeAttribute('id');
 	tr.append(td1);
 	tr.append(td2);
 	res(tr);
@@ -45,10 +49,12 @@ const promise3 = new Promise((res,rej)=> {
 	td1.textContent = "Promise 3";
 	td2.textContent = 3;
 	tr.textContent = "Loading...";
+	tr.setAttribute('id','loading');
 	tbody.append(tr);
 
 	setTimeout(()=> {
 	tr.textContent = "";
+	tr.removeAttribute('id');
 	tr.append(td1);
 	tr.append(td2);
 	res(tr);
