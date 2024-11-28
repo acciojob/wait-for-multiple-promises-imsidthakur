@@ -68,7 +68,7 @@ Promise.all([promise1,promise2,promise3]).then((val) => {
 	const td1 = document.createElement('td');
 	const td2 = document.createElement('td');
 	td1.textContent = "Total";
-	td2.textContent = 6;
+	td2.textContent = 3;
 
 	tr1.append(td1);
 	tr1.append(td2);
