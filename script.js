@@ -8,6 +8,7 @@ const promise1 = new Promise((res,rej)=> {
   const tr = document.createElement('tr');
 	const td1 = document.createElement('td');
 	const td2 = document.createElement('td');
+
 	
 	td1.textContent = "Loading...";
 	tr.append(td1);
@@ -30,7 +31,7 @@ const promise2 = new Promise((res,rej)=> {
 	const td1 = document.createElement('td');
 	const td2 = document.createElement('td');
 	
-	td1.textContent = "Loading...";
+	// td1.textContent = "Loading...";
 	tr.append(td1);
 	tr.setAttribute('id','loading');
 	tbody.append(tr);
@@ -51,7 +52,8 @@ const promise3 = new Promise((res,rej)=> {
 	const td1 = document.createElement('td');
 	const td2 = document.createElement('td');
 	
-	td1.textContent = "Loading...";
+	
+	// td1.textContent = "Loading...";
 	tr.append(td1);
 	tr.setAttribute('id','loading');
 	tbody.append(tr);
