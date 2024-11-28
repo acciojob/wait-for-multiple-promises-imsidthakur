@@ -1,7 +1,11 @@
 //your JS code here. If required.
 const tbody = document.getElementById("output");
 const tr = document.createElement('tr');
-tr.textContent = "Loading...";
+const td = document.createElement('td');
+tr.setAttribute("id","loading");
+td.textContent = "Loading...";
+td.setAttribute("colSpan","2");
+tr.append(td);
 tbody.append(tr);
 
 
