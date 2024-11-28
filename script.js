@@ -68,8 +68,17 @@ const promise3 = new Promise((res,rej)=> {
 })
 
 Promise.all([promise1,promise2,promise3]).then((val) => {
-  console.log(val);
 	val.forEach((row)=> {
 	  tbody.append(row);
 	})
+    const tr = document.createElement('tr');
+	const td1 = document.createElement('td');
+	const td2 = document.createElement('td');
+	td1.textContent = "Total";
+	td2.textContent = 6;
+
+	tr.append(td1);
+	tr.append(td2);
+	tbody.append(tr);
+	
 })
